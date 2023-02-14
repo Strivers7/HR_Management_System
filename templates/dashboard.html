@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../static/css/submenu.css">
+</head>
+<body>
+  <div class="headBlock">
+    <img src="../static/images/dashboardHead.svg" alt="">
+    <img src="../static/images/dashboardHead.svg" alt="">
+  </div>
+  <div class="menu">
+    <img class="profilePic" src="../static/images/profile.jpg" alt="">
+    <p class="userType">HR</p>
+    <p class="userName">James Goblin</p>
+    <div class="menuHolder">
+      <div id="Performance" class="menuOptions" onclick="openCity(event, 'Canada')">
+        <img class="menuImage" 
+        style="width: 22px;
+        height: 21px;"
+        src="../static/images/Vector.svg" alt="">
+        <p class="menuText">Performance</p>
+      </div>
+      <div id="Payroll" class="menuOptions" onclick="openCity(event, 'London')">
+        <img class="menuImage" src="../static/images/Salary.svg" alt="">
+        <p class="menuText">Payroll</p>
+      </div>
+      <div id="Recruitment" class="menuOptions" onclick="openCity(event, 'Paris')">
+        <img class="menuImage" style="width: 29px;
+        margin-left: -4px;
+        height: 29px;" src="../static/images/magnifying-glass-circle.svg" alt="">
+        <p class="menuText">Recruitment</p>
+      </div>
+      <div id="Leaves" class="menuOptions" onclick="openCity(event, 'Tokyo')">
+        <img class="menuImage"
+        style="width: 24px;
+        height: 24px;"
+        src="../static/images/Subtract.svg " alt="">
+        <p class="menuText">Leave Notes</p>
+      </div>  
+      <div id="Add" class="menuOptions" onclick="openCity(event, 'India')">
+        <img class="menuImage"
+        style="width: 27px;
+        height: 27px;"
+        src="../static/images/user-circle.svg " alt="">
+        <p class="menuText">Add</p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="tabView">
+    <div id="Canada" class="tabcontent">
+      <h3>Performance</h3>
+      <p>Performance Tab.</p>
+    </div>
+  
+    <div id="London" class="tabcontent">
+      <h3>Payroll</h3>
+      <p>Payroll Tab</p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <h3>Recruitment</h3>
+      <p>Recruitment Tab</p>
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h3>Leave Notes</h3>
+      <p>Leave Note</p>
+    </div>
+  
+    <div id="India" class="tabcontent">
+      <h3>Add Employee</h3>
+      <p>Add Employee Tab</p>
+    </div>
+  </div>
+</body>
+<script src="../static/js/script.js"></script>
+</html>
